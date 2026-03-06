@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    display:grid;
+    place-content:center;
+    min-height:100vh;
+    width:100%;
+    background:#f1c40f;
+}
+
+
+
+.flipbook{
+    width:80vw;
+    max-width:1000px;
+    height:60vh;
+    max-height:600px;
+}
+
+
+
+.flipbook .hard{
+    background-image:url('https://images.unsplash.com/photo-1521033719794-41049d18b8d4?fm=jpg&q=60&w=3000');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+    font-weight:bold;
+    border:none;
+}
+
+
+
+.headline{
+    text-align:center;
+}
+
+.subhead{
+    text-align:center;
+}
+
+.flipbook .hard small{
+    font-style:italic;
+    opacity:0.7;
+    font-size:14px;
+}
+
+
+
+.flipbook .page{
+    background:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+
+.page img{
+    width:70%;
+    max-width:400px;
+    object-fit:cover;
+}
+
+.flipbook .page small{
+    font-size:14px;
+}
+
+
+
+@media (max-width:1024px){
+
+.flipbook{
+    width:90vw;
+    height:65vh;
+}
+
+.page img{
+    width:80%;
+}
+
+}
+
+
+
+@media (max-width:600px){
+
+.flipbook{
+    width:95vw;
+    height:70vh;
+}
+
+.headline{
+    font-size:20px;
+}
+
+.subhead{
+    font-size:14px;
+}
+
+.page img{
+    width:90%;
+}
+
+}
